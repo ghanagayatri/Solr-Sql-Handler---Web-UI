@@ -1,2 +1,30 @@
 # Solr-Sql-Handler---Web-UI
 Built a UI using Django on top of the Solr Sql Handler
+
+
+### Start & Stop Solr in Cloud Mode ###
+bin/solr -e cloud
+bin/solr stop -all
+
+### How to Use the SQL Handler for Solr ###
+
+Step 1: You will need to run Solr in SolrCloud mode.
+
+Step 2: And indexing some data right after SolrCloud is started:
+
+bin/post -c gettingstarted example/exampledocs/*.xml
+
+Step 3: Let’s retrieve all documents from the gettingstarted collection that have the field inStock equal to true.To do that using the default query parser in Solr we would run the following command:
+
+curl 'localhost:8983/solr/gettingstarted/select?q=inStock:true&fl=id,title&indent=true'
+
+Step 4: curl --data-urlencode 'stmt=select id,name from gettingstarted where inStock = 'true'' http://localhost:8983/solr/gettingstarted/sql
+
+curl --data-urlencode 'stmt=select id,name from gettingstarted where inStock = 'true'' 'http://localhost:8983/solr/gettingstarted/sql?aggregationMode=facet'
+
+curl --data-urlencode 'stmt=select distinct id as distId from gettingstarted where inStock = 'true' order by id desc' 'http://localhost:8983/solr/gettingstarted/sql?aggregationMode=facet'
+
+
+### References ###
+http://www.solrtutorial.com/solr-in-5-minutes.html
+https://sematext.com/blog/2016/04/18/solr-6-solrcloud-sql-support/
