@@ -8,7 +8,7 @@ Built a UI using Django on top of the Solr Sql Handler
 
 ### How to Use the SQL Handler for Solr ###
 
-Step 1: You will need to run Solr in SolrCloud mode.
+*Step 1:* You will need to run Solr in SolrCloud mode.
 
 Step 2: And indexing some data right after SolrCloud is started:
 
