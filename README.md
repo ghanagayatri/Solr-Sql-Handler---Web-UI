@@ -3,8 +3,8 @@ Built a UI using Django on top of the Solr Sql Handler
 
 
 ### Start & Stop Solr in Cloud Mode ###
-bin/solr -e cloud
-bin/solr stop -all
+1. bin/solr -e cloud
+2. bin/solr stop -all
 
 ### How to Use the SQL Handler for Solr ###
 
@@ -26,5 +26,5 @@ curl --data-urlencode 'stmt=select distinct id as distId from gettingstarted whe
 
 
 ### References ###
-http://www.solrtutorial.com/solr-in-5-minutes.html
-https://sematext.com/blog/2016/04/18/solr-6-solrcloud-sql-support/
+1. http://www.solrtutorial.com/solr-in-5-minutes.html
+2. https://sematext.com/blog/2016/04/18/solr-6-solrcloud-sql-support/
