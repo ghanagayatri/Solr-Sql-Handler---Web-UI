@@ -31,4 +31,4 @@ curl --data-urlencode 'stmt=select distinct id as distId from gettingstarted whe
 
 Here is how the UI looks like:
 
-![alt text](https://github.com/ghanagayatri/Solr-Sql-Handler---Web-UI/blob/master/Screen%20Shot%202017-10-07%20at%209.33.05%20PM.png)
+![alt text](https://github.com/ghanagayatri/Solr-Sql-Handler---Web-UI/blob/master/Screen%20Shot%202017-10-07.png)
