@@ -1,5 +1,5 @@
 # Solr-Sql-Handler - Web-UI
-Built a UI using Django on top of the Solr Sql Handler
+Built a UI using Django on top of the Solr Sql Handler. This works only with Solr 6.6.1
 
 
 ### Start & Stop Solr in Cloud Mode ###
@@ -28,3 +28,7 @@ curl --data-urlencode 'stmt=select distinct id as distId from gettingstarted whe
 ### References ###
 1. http://www.solrtutorial.com/solr-in-5-minutes.html
 2. https://sematext.com/blog/2016/04/18/solr-6-solrcloud-sql-support/
+
+Here is how the UI looks like:
+
+![alt text](https://github.com/ghanagayatri/Solr-Sql-Handler---Web-UI/blob/master/Screen%20Shot%202017-10-07%20at%209.33.05%20PM.png)
